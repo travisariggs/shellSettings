@@ -1,0 +1,7 @@
+[user]
+	email = travis.riggs@lexmark.com
+	name = Travis Riggs
+[diff]
+	tool = meld
+[core]
+	editor = vim

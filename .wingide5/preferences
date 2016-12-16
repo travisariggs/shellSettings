@@ -1,0 +1,16 @@
+[user-preferences]
+edit.other-split-type = 'default'
+edit.qt-display-font = u'Anonymous Pro,12'
+edit.qt-show-edge-markers = (1,
+                             80,
+                             None)
+edit.show-line-numbers = True
+edit.syntax-formatting = {'PYTHON': {u'commentblock': {'fore': '#52296E'}}}
+edit.tab-size = 4
+gui.alphabetize-tabs = False
+gui.qt-color-palette = u'monokai'
+gui.qt-display-theme = ('selected-colors',
+                        None,
+                        u'Windows',
+                        None)
+main.auto-rstrip-on-save = 'on-save'
