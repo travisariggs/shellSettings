@@ -35,13 +35,13 @@ ORIENTATION=$(tail -n 1 .sensor.log | grep 'orientation' | grep -oE '[^ ]+$')
 #  For each case, rotate the screen to the proper orientation and enable or disable the keyboard and trackpad
 case "$ORIENTATION" in
 normal)
-xrandr --output eDP-1 --rotate normal && xinput set-prop 12 "Device Enabled" 1 && xinput set-prop 14 "Device Enabled" 1 ;;
+xrandr --output eDP1 --rotate normal && xinput set-prop 12 "Device Enabled" 1 && xinput set-prop 14 "Device Enabled" 1 ;;
 bottom-up)
-xrandr --output eDP-1 --rotate inverted && xinput set-prop 12 "Device Enabled" 0 && xinput set-prop 14 "Device Enabled" 0 ;;
+xrandr --output eDP1 --rotate inverted && xinput set-prop 12 "Device Enabled" 0 && xinput set-prop 14 "Device Enabled" 0 ;;
 right-up)
-xrandr --output eDP-1 --rotate right && xinput set-prop 12 "Device Enabled" 0 && xinput set-prop 14 "Device Enabled" 0 ;;
+xrandr --output eDP1 --rotate right && xinput set-prop 12 "Device Enabled" 0 && xinput set-prop 14 "Device Enabled" 0 ;;
 left-up)
-xrandr --output eDP-1 --rotate left && xinput set-prop 12 "Device Enabled" 0 && xinput set-prop 14 "Device Enabled" 0 ;;
+xrandr --output eDP1 --rotate left && xinput set-prop 12 "Device Enabled" 0 && xinput set-prop 14 "Device Enabled" 0 ;;
 esac
 
 done
