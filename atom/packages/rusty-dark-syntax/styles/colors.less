@@ -1,0 +1,59 @@
+@import "palette";
+
+// These colors are specific to the theme. Do not use in a package!
+
+@clear-text: @clear-brown; // Used for plain readable text
+@faint-text: @darkest-wood; // Used for absolutely not-important text, i.e. markers.
+@deco-text: @dark-grey; // Used for decorating the code
+@doc-text: @grey; // Used for documenting the code
+@loger-text: @clear-grey; // For logger functions
+@marked-text: @yellow; // Text that was transformed by editor (i.e. folded).
+@found-text: @dark-yellow; // Text that was found using search.
+@found-selection-text: @white; // Search selection.
+@comment-text: @sea-green;
+@keyword-text: @washed-out-blue; // Any keyword
+@keyword-fn-text: @light-orange; // Rust's fn keyword
+@control-text: @teal; // Flow-control structures
+@function-text: @clear-olive; // Functions
+@string-function-text: @clear-lime-green; // Function that works with strings, found in PHP
+@type-text: @clear-yellow; // Types, like classes/structs/etc
+@type-keyword-text: @light-teal; // Type keywords, like enum, mod, struct, etc
+@name-text: @clear-yellow; // Names, like function names
+@attribute-name-text: @orange; // Atribute names
+@attribute-id-text: @clear-wood; // Atribute i
+@method-text: @clear-yellow; // Method calls
+@method-parameter-text: @clear-olive; // Parameter color in syntaxes that differentiate them
+@lifetime-text: @washed-out-blue; // Rust's lifetime markers
+@operator-text: @orange; // Operator structures
+@operator-dereference-text: @lemon; // Dereference operators ("." in Java)
+@unit-text: @dark-wood; // Unit text (px)
+@visibility-text: @light-teal; // Public/privat
+@struct-text: @lawn-green; // Class, struct, method
+@generic-text: @washed-out-lemon; // Java's generic construct
+@generic-bounds-lvl1: @light-orange; // Rust's generic bounds
+@generic-bounds-lvl2: @chokolate;
+@integer-text: @violet; // Integers and similar constants
+@escape-text: @sky-blue; // Escape sequences
+@danger-text: @distinct-red; // Marks dangerious constructs (i.e unsafe)
+@variable-text: @clear-wood; // Variables and field references
+@variable-secondary: @dark-wood; // Variable punctuation (in PHP $), interpolation
+@string-text: @lime-green; // Strings
+@string-frozen-text: @clear-sea-green; // Non-interpolatable string
+@punctuation-text: @lime-green; // String quotes and similar
+@namespace-and-dereference-text: @dark-yellow; // Namespace separators and other punctuation
+@regexp-text: @washed-out-red; // Regexp string.
+@regexp-operator-text: @wood; // Regexp operator.
+@regexp-punctuation-text: @lemon; // Regexp punctuation.
+@embeded-text: @red; // Links and embeds
+
+@dark-bg: @black-wood; // The darkest possible background (in light theme the brightest).
+@selection-bg: @darker-wood;
+@separator-bg: @darker-grey;
+@faint-selection-bg: @darkest-wood; // Secondary selection background that is not so important.
+@red-bg: @darkest-red;
+
+// These are for git markers in the gutter
+@renamed: @clear-blue; // blue
+@added: @clear-lime-green; // green
+@modified: @orange; // orange
+@removed: @red; // red

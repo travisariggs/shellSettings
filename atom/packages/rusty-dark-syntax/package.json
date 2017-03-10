@@ -1,0 +1,67 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-117210-17222-158q0uc/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-117210-17222-158q0uc/package.tgz",
+        "spec": "/tmp/d-117210-17222-158q0uc/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-117210-17222-vtog1k"
+    ]
+  ],
+  "_from": "../d-117210-17222-158q0uc/package.tgz",
+  "_id": "rusty-dark-syntax@0.6.3",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/rusty-dark-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-117210-17222-158q0uc/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-117210-17222-158q0uc/package.tgz",
+    "spec": "/tmp/d-117210-17222-158q0uc/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117210-17222-158q0uc/package.tgz",
+  "_shasum": "cea61aada4271d325f13bb943dc67bba94d3219d",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-117210-17222-158q0uc/package.tgz",
+  "_where": "/tmp/apm-install-dir-117210-17222-vtog1k",
+  "bugs": {
+    "url": "https://github.com/Nercury/atom-rusty-dark-syntax/issues"
+  },
+  "dependencies": {},
+  "description": "A dark rusty theme that favors orange-green-yellow colors",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/Nercury/atom-rusty-dark-syntax#readme",
+  "keywords": [
+    "colorful",
+    "rust",
+    "rusty",
+    "dark",
+    "orange"
+  ],
+  "license": "MIT",
+  "name": "rusty-dark-syntax",
+  "optionalDependencies": {},
+  "readme": "# Rusty dark syntax theme for Atom\n\n> __Warning__: this theme will not work right if `atom-language-rust` package is installed.\n> To use this theme, __uninstall__ `atom-language-rust`, install `language-rust`, and restart __Atom__.\n\nThe main motivation was to make a syntax theme that works well for the\n[Rust](https://www.rust-lang.org/) language. All I needed was suitable\ninspiration. How would rusty theme look like? Let's see:\n\n![Rusty Inspiration](https://raw.githubusercontent.com/Nercury/atom-rusty-dark-syntax/master/examples/rust-inspiration.jpg)\n\nOf course, I tried not overdo it and keep it functional. This resulted in\nfollowing choices:\n\n- Actual code is a bit brown\n- Keywords and types favor blue\n- Control structures use a very distinct green\n- Type bounds favor brown\n- Comments are readable grey\n- Strings are green\n- There are colors to hint very special cases, like unsafe\n\nOf course, I also tested it with other languages, in particular: `js`, `html`, `css`,\n`less`, `java`, `lua`, `php`, `bash`, `toml`, `markdown`, `protobuf`, `sql`.\n\nThe result:\n\n![Screenshot](https://raw.githubusercontent.com/Nercury/atom-rusty-dark-syntax/master/examples/screenshot.jpg)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nercury/atom-rusty-dark-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "0.6.3"
+}
