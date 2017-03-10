@@ -174,7 +174,7 @@ Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 
-colorscheme travis-monokai
+"colorscheme travis-monokai
 
 if (exists('+colorcolumn'))
   set colorcolumn=73,80
