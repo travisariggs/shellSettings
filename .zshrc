@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/travis/.oh-my-zsh
+export ZSH=/home/travis/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -58,7 +58,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
-  export PATH="/home/travis/code/ros/catkin_ws/devel/bin:/opt/ros/kinetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+export PATH="/home/travis/code/ros/catkin_ws/devel/bin:/opt/ros/kinetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -80,18 +80,17 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Travis's Aliases
 alias ll='ls -l'
 alias la='ls -A'
 alias cd..='cd ..'
 alias vi='vim'
 
-export GAZEBO_MODEL_PATH=${HOME}/code/ros/catkin_ws/src/gazebo_models/models
-source /opt/ros/kinetic/setup.zsh
-source /home/travis/code/ros/catkin_ws/devel/setup.zsh
+## For ROS work
+#export GAZEBO_MODEL_PATH=${HOME}/code/ros/catkin_ws/src/gazebo_models/models
+#source /opt/ros/kinetic/setup.zsh
+#source /home/travis/code/ros/catkin_ws/devel/setup.zsh
 
 # Robot via VPN
 #export ROS_MASTER_URI=http://10.110.102.1:11311
@@ -102,5 +101,5 @@ source /home/travis/code/ros/catkin_ws/devel/setup.zsh
 #export ROS_HOSTNAME=192.168.1.7
 
 # Local machine
-export ROS_MASTER_URI=http://localhost:11311
-export ROS_HOSTNAME=localhost
+#export ROS_MASTER_URI=http://localhost:11311
+#export ROS_HOSTNAME=localhost
