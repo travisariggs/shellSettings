@@ -84,6 +84,7 @@ export PATH="/home/travis/code/ros/catkin_ws/devel/bin:/opt/ros/kinetic/bin:/usr
 # Travis's Aliases
 alias ll='ls -l'
 alias la='ls -A'
+alias l='ls'
 alias cd..='cd ..'
 alias vi='vim'
 
