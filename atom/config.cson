@@ -1,0 +1,17 @@
+"*":
+  core:
+    audioBeep: false
+    telemetryConsent: "no"
+    themes: [
+      "atom-dark-ui"
+      "rusty-dark-syntax"
+    ]
+  editor:
+    showIndentGuide: true
+    showInvisibles: true
+    tabLength: 4
+    tabType: "soft"
+  "exception-reporting":
+    userId: "7a1c5e58-3c27-21eb-849f-3a338fca2541"
+  welcome:
+    showOnStartup: false
