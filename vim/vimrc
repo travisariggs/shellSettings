@@ -172,6 +172,8 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'scrooloose/nerdcommenter'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'airblade/vim-gitgutter'
+"Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
@@ -181,4 +183,18 @@ if (exists('+colorcolumn'))
   set colorcolumn=73,80
   highlight ColorColumn ctermbg=black
 endif
+
+" Highlight the current cursor line with an underline
+set cursorline
+" Highlight it with a black background
+"hi CursorLine   cterm=NONE ctermbg=black guibg=black
+
+" Change background while in insert mode to black
+"au InsertEnter * hi Normal ctermbg=black guibg=black
+"au InsertLeave * hi Normal ctermbg=None guibg=None
+
+" Change background of current line while in insert mode to black
+autocmd InsertEnter * highlight CursorLine ctermbg=black guibg=black
+autocmd InsertLeave * highlight CursorLine ctermbg=NONE guibg=NONE
+autocmd InsertLeave * set cursorline
 
