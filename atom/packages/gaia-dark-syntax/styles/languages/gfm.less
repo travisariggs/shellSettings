@@ -1,0 +1,72 @@
+.syntax--gfm {
+  .text1();
+  .punctuation-mixin();
+
+  .syntax--link {
+    .primary2();
+
+    .syntax--entity {
+      border-bottom: thin solid;
+    }
+  }
+
+  &.syntax--markup {
+    .text1();
+
+    &.syntax--bold   { .syntax--bold(); }
+    &.syntax--italic { .syntax--italic(); }
+    &.syntax--strike {
+      .text2();
+      text-decoration: line-through;
+    }
+
+    &.syntax--raw,
+    &.syntax--raw .syntax--support,
+    &.syntax--code .syntax--support {
+      .secondary2();
+    }
+
+    &.syntax--underline.syntax--link {
+      .text2();
+    }
+  }
+
+  &.syntax--comment  {
+    .text2();
+    &.syntax--quote {
+      .text1();
+    }
+  }
+
+  &.syntax--table {
+    .text1();
+
+    .syntax--border,
+    .syntax--pipe {
+      .text2();
+    }
+  }
+
+  &.syntax--variable,
+  &.syntax--entity {
+    .primary2();
+  }
+
+  &.syntax--variable.syntax--list {
+    .text1();
+    font-weight: bold;
+  }
+
+  &.syntax--support  {
+    .text1();
+  }
+
+  &.syntax--heading {
+    .primary1();
+    font-weight: bold;
+
+    &.syntax--marker {
+      .primary1();
+    }
+  }
+}

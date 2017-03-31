@@ -1,0 +1,28 @@
+.syntax--sass {
+  .syntax--at-rule .syntax--at-rule {
+    &,
+    > .syntax--punctuation{
+      .primary1();
+    }
+  }
+  .syntax--mixin + .syntax--function,
+  .syntax--include + .syntax--function {
+    .secondary1();
+  }
+  &.syntax--property-value {
+    .primary3();
+    .syntax--function {
+      .primary2();
+    }
+    .syntax--punctuation {
+      .text2();
+    }
+  }
+  &.syntax--variable.syntax--parameter.syntax--url {
+    .primary3();
+  }
+  &.syntax--class,
+  &.syntax--parent-selector-suffix {
+    .primary1();
+  }
+}

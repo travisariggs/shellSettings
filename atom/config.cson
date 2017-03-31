@@ -4,11 +4,10 @@
     telemetryConsent: "no"
     themes: [
       "atom-dark-ui"
-      "rusty-dark-syntax"
+      "earthsung-by-jackson-syntax"
     ]
   editor:
     showIndentGuide: true
-    showInvisibles: true
     tabLength: 4
     tabType: "soft"
   "exception-reporting":

@@ -1,0 +1,74 @@
+.syntax--scss {
+  .syntax--at-rule .syntax--at-rule {
+    &,
+    > .syntax--punctuation{
+      .primary1();
+    }
+  }
+  .syntax--mixin + .syntax--function,
+  .syntax--include + .syntax--function {
+    .secondary1();
+  }
+  &.syntax--property-value {
+    .primary3();
+    .syntax--function {
+      .primary2();
+    }
+    .syntax--punctuation {
+      .text2();
+    }
+  }
+  &.syntax--variable.syntax--parameter.syntax--url {
+    .primary3();
+  }
+  &.syntax--class,
+  &.syntax--parent-selector-suffix {
+    .primary1();
+  }
+
+  .syntax--support {
+    &.syntax--function {
+      .secondary2();
+    }
+  }
+
+  .syntax--keyword {
+    &.syntax--control {
+      .primary1();
+    }
+  }
+
+  .syntax--punctuation {
+    &.syntax--definition {
+      &.syntax--keyword {
+        .primary1();
+      }
+
+      &.syntax--string {
+        .secondary1();
+      }
+
+      &.syntax--constant {
+        .primary3();
+      }
+    }
+  }
+
+  .syntax--variable {
+    &.syntax--interpolation {
+      .primary3();
+    }
+  }
+
+  .syntax--string {
+    &.syntax--quoted {
+      .secondary1();
+    }
+  }
+
+  .syntax--entity {
+    &.syntax--name.syntax--function {
+      .secondary2();
+    }
+  }
+}

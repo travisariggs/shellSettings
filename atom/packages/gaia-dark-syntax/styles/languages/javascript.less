@@ -1,0 +1,30 @@
+.syntax--source.syntax--js {
+  .syntax--keyword {
+    &.syntax--operator {
+      .text1();
+
+      &.syntax--typeof {
+        .secondary2();
+      }
+
+      &.syntax--logical {
+        .secondary2();
+      }
+
+      &.syntax--delete,
+      &.syntax--in,
+      &.syntax--of,
+      &.syntax--instanceof,
+      &.syntax--new,
+      &.syntax--void {
+        .tertiary2()
+      }
+    }
+  }
+
+  .syntax--meta {
+    &.syntax--arguments {
+      .text1();
+    }
+  }
+}

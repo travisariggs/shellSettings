@@ -1,0 +1,18 @@
+.syntax--css {
+  &.syntax--source {
+    .text2();
+  }
+  &.syntax--at-rule {
+    .primary1();
+    .syntax--keyword.syntax--punctuation {
+      color: inherit;
+    }
+  }
+  &.syntax--attribute-name {
+    &.syntax--id,
+    &.syntax--class,
+    &.syntax--parent-selector {
+      .primary1();
+    }
+  }
+}

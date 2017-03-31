@@ -1,0 +1,36 @@
+.syntax--coffee {
+  &.syntax--source {
+    .text1();
+  }
+
+  .syntax--string {
+    &.syntax--quoted {
+      .secondary1();
+    }
+  }
+
+  .syntax--punctuation {
+    &.syntax--definition {
+      &.syntax--string {
+        .secondary1();
+      }
+    }
+  }
+
+  .syntax--keyword {
+    &.syntax--control {
+      .primary3();
+      &.syntax--anchor {
+        .secondary2();
+      }
+    }
+
+    &.syntax--operator {
+      .text1();
+    }
+
+    &.syntax--other {
+      .secondary2();
+    }
+  }
+}

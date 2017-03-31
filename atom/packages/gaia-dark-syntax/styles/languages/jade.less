@@ -1,0 +1,27 @@
+.syntax--jade {
+  &.syntax--text {
+    .tertiary2();
+  }
+
+  .syntax--meta.syntax--control.syntax--flow {
+    .primary2();
+  }
+
+  .syntax--constant.syntax--name.syntax--attribute.syntax--tag {
+    .text2();
+  }
+
+  .syntax--attribute-name.syntax--id {
+    .primary3();
+  }
+
+  .syntax--string {
+    &.syntax--quoted {
+      .secondary1();
+    }
+
+    &.syntax--interpolated {
+      .secondary2();
+    }
+  }
+}

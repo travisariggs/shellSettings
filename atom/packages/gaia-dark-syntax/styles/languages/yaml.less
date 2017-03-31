@@ -1,0 +1,22 @@
+.syntax--yaml {
+  .syntax--tag {
+    .primary1();
+  }
+  .syntax--string {
+    .text1();
+
+    &.syntax--quoted {
+      .secondary1();
+    }
+  }
+  .syntax--constant {
+    .primary3();
+  }
+  .syntax--punctuation {
+    .text2();
+
+    &.syntax--string {
+      .secondary1();
+    }
+  }
+}

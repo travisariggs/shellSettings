@@ -1,0 +1,65 @@
+.text1 { color: @text1; }
+.text2 { color: @text2; }
+
+.primary1 { color: @primary1; }
+.primary2 { color: @primary2; }
+.primary3 { color: @primary3; }
+
+.secondary1 { color: @secondary1; }
+.secondary2 { color: @secondary2; }
+
+.tertiary1 { color: @tertiary1; }
+.tertiary2 { color: @tertiary2; }
+.tertiary3 { color: @tertiary3; }
+
+// Mixins -----------------------------------
+.punctuation-mixin(@punctuation:@text2) {
+  .syntax--punctuation,
+  .syntax--bracket,
+  .syntax--brace {
+    color: @punctuation;
+  }
+}
+
+.syntax--meta,
+.syntax--support {
+  .text1();
+}
+
+.syntax--html.syntax--elements,
+.syntax--entity,
+.syntax--tag,
+.syntax--function-call {
+  .primary1();
+}
+
+.syntax--variable,
+.syntax--attribute-name,
+.syntax--character.syntax--escape {
+  .primary2();
+}
+
+.syntax--constant,
+.syntax--storage.syntax--type {
+  .primary3();
+}
+
+.syntax--string,
+.syntax--string.syntax--punctuation {
+  .secondary1();
+}
+
+.syntax--keyword,
+.syntax--storage {
+  .secondary2();
+}
+
+.punctuation-mixin();
+
+.syntax--comment {
+  .text2();
+  font-style: italic;
+}
+
+.syntax--bold { font-weight: bold; }
+.syntax--italic { font-style: italic; }

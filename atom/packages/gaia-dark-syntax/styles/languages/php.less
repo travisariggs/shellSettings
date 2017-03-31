@@ -1,0 +1,27 @@
+.syntax--php {
+  .syntax--string-contents {
+      .secondary1();
+  }
+
+  .syntax--keyword {
+    .primary3();
+
+    &.syntax--other {
+      .text2;
+    }
+
+    &.syntax--operator {
+      .primary2();
+    }
+  }
+
+  .syntax--punctuation {
+    &.syntax--section.syntax--embedded {
+      .text1();
+    }
+
+    &.syntax--definition.syntax--variable {
+      .primary2();
+    }
+  }
+}

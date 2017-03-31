@@ -1,0 +1,19 @@
+.syntax--json {
+  .syntax--string {
+    .primary1();
+    .syntax--punctuation {
+      .text2();
+    }
+  }
+  .syntax--value {
+    & > .syntax--string {
+      .primary2();
+      .syntax--punctuation {
+        .text2();
+      }
+    }
+    .syntax--constant {
+      .secondary2();
+    }
+  }
+}

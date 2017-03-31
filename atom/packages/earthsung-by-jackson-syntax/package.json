@@ -1,0 +1,69 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-117210-24470-1vfs87b/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-117210-24470-1vfs87b/package.tgz",
+        "spec": "/tmp/d-117210-24470-1vfs87b/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-117210-24470-f5ix2b"
+    ]
+  ],
+  "_from": "../d-117210-24470-1vfs87b/package.tgz",
+  "_id": "earthsung-by-jackson-syntax@0.3.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/earthsung-by-jackson-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-117210-24470-1vfs87b/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-117210-24470-1vfs87b/package.tgz",
+    "spec": "/tmp/d-117210-24470-1vfs87b/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117210-24470-1vfs87b/package.tgz",
+  "_shasum": "a9d7983851f4a001b6a3b4742a006f395dd4dd5b",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-117210-24470-1vfs87b/package.tgz",
+  "_where": "/tmp/apm-install-dir-117210-24470-f5ix2b",
+  "bugs": {
+    "url": "https://github.com/jesseleite/earthsung-by-jackson-syntax-atom/issues"
+  },
+  "dependencies": {},
+  "description": "A port of Dayle Rees' Earthsong theme.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/jesseleite/earthsung-by-jackson-syntax-atom#readme",
+  "keywords": [
+    "syntax",
+    "theme",
+    "dayle",
+    "rees",
+    "earthsong",
+    "earthsung",
+    "port"
+  ],
+  "license": "MIT",
+  "name": "earthsung-by-jackson-syntax",
+  "optionalDependencies": {},
+  "readme": "# Earthsung By Jackson\n\nA port of [Dayle Rees](http://daylerees.github.io)' Earthsong theme for Atom.\n\n## UI Integration\n\nThis theme best integrates with Atom's [One Dark UI](https://atom.io/themes/one-dark-ui).  By default, UI is left untouched.  If you want the modified UI (as shown in the screenshot above) for better colour matching between UI syntax theme, add the following line to your Init Script and reload Atom.\n\n```coffee\ndocument.body.classList.add('earthsung-modify-ui')\n```\n\n## Screenshot\n\n![A screenshot of your theme](https://raw.githubusercontent.com/JesseLeite/earthsung-by-jackson-syntax-atom/master/screenshot.png)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesseleite/earthsung-by-jackson-syntax-atom.git"
+  },
+  "theme": "syntax",
+  "version": "0.3.0"
+}
