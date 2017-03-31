@@ -209,6 +209,12 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+
+"-------------------------------------------------------------
+"   Misc.
+" Turn off highlighting until next search
+nnoremap <F3> :noh<CR>
+
 "-------------------------------------------------------------
 "    Code Folding
 "set foldmethod=indent
