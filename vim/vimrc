@@ -21,6 +21,7 @@ set nocompatible
 filetype indent plugin on
 
 " Enable syntax highlighting
+let python_highlight_all=1
 syntax on
 
 
@@ -179,6 +180,8 @@ Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plug 'vim-syntastic/syntastic'
 Plug 'nvie/vim-flake8' " Python PEP8 checker
 Plug 'ctrlpvim/ctrlp.vim'
+"Plug 'tmhedberg/SimpylFold'
+Plug 'vim-scripts/indentpython.vim'
 
 call plug#end()
 
@@ -205,6 +208,12 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+"-------------------------------------------------------------
+"    Code Folding
+"set foldmethod=indent
+"set foldlevel=99
+"let g:SimpylFold_docstring_preview=1
+
 
 "--------------------------------------------------------------
 "   NERDTree Plugin Configuration
@@ -218,9 +227,9 @@ let g:nerdtree_tabs_open_on_console_startud=2
 
 "--------------------------------------------------------------
 "   Syntax Checker Configuration
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
@@ -242,4 +251,12 @@ set cursorline
 autocmd InsertEnter * highlight CursorLine ctermbg=black guibg=black
 autocmd InsertLeave * highlight CursorLine ctermbg=NONE guibg=NONE
 autocmd InsertLeave * set cursorline
+
+
+"--------------------------------------------------------------
+"  Indention to 2 spaces for web development
+au BufNewFile,BufRead *.js, *.html, *.css
+    \ set tabstop=2
+    \ set softtabstop=2
+    \ set shiftwidth=2
 

@@ -1,5 +1,9 @@
-set tabstop=8
-set expandtab
-set shiftwidth=4
+set tabstop=4
 set softtabstop=4
-setl nosmartindent
+set shiftwidth=4
+set textwidth=79
+set expandtab
+set autoindent
+"setl nosmartindent
+set fileformat=unix
+set encoding=utf-8
