@@ -182,6 +182,7 @@ Plug 'nvie/vim-flake8' " Python PEP8 checker
 Plug 'ctrlpvim/ctrlp.vim'
 "Plug 'tmhedberg/SimpylFold'
 Plug 'vim-scripts/indentpython.vim'
+Plug 'davidhalter/jedi-vim'
 
 call plug#end()
 
