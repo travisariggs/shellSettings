@@ -8,6 +8,8 @@
     ]
   editor:
     showIndentGuide: true
+    softWrap: true
+    softWrapAtPreferredLineLength: true
     tabLength: 4
     tabType: "soft"
   "exception-reporting":
