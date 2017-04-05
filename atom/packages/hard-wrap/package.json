@@ -1,0 +1,83 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/rc/_pjq3yv173q6kh_51rczzgdm0000gn/T/d-11735-1395-125dzf2/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/rc/_pjq3yv173q6kh_51rczzgdm0000gn/T/d-11735-1395-125dzf2/package.tgz",
+        "spec": "/private/var/folders/rc/_pjq3yv173q6kh_51rczzgdm0000gn/T/d-11735-1395-125dzf2/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/rc/_pjq3yv173q6kh_51rczzgdm0000gn/T/apm-install-dir-11735-1395-1k0lvel"
+    ]
+  ],
+  "_from": "../d-11735-1395-125dzf2/package.tgz",
+  "_id": "hard-wrap@1.1.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/hard-wrap",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/rc/_pjq3yv173q6kh_51rczzgdm0000gn/T/d-11735-1395-125dzf2/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/rc/_pjq3yv173q6kh_51rczzgdm0000gn/T/d-11735-1395-125dzf2/package.tgz",
+    "spec": "/private/var/folders/rc/_pjq3yv173q6kh_51rczzgdm0000gn/T/d-11735-1395-125dzf2/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11735-1395-125dzf2/package.tgz",
+  "_shasum": "c411871d8a5572037f49ee66df229dcde1cf5092",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/rc/_pjq3yv173q6kh_51rczzgdm0000gn/T/d-11735-1395-125dzf2/package.tgz",
+  "_where": "/private/var/folders/rc/_pjq3yv173q6kh_51rczzgdm0000gn/T/apm-install-dir-11735-1395-1k0lvel",
+  "activationCommands": {
+    "atom-text-editor": "hard-wrap:reflow-selection"
+  },
+  "babel": {
+    "stage": 2,
+    "optional": [
+      "optimisation.flow.forOf"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/forivall/atom-hard-wrap/issues"
+  },
+  "dependencies": {
+    "repeating": "^2.0.0",
+    "underscore-plus": "^1.6.6"
+  },
+  "description": "Hard wraps (aka autoflow) your text; works with multi-wrap-guide",
+  "devDependencies": {
+    "babel": "^5.8.35",
+    "babel-eslint": "^4.1.6",
+    "eslint": "^1.10.3"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint"
+  },
+  "homepage": "https://github.com/forivall/atom-hard-wrap#readme",
+  "keywords": [
+    "wrap",
+    "autoflow"
+  ],
+  "license": "MIT",
+  "main": "./lib/hard-wrap",
+  "name": "hard-wrap",
+  "optionalDependencies": {},
+  "readme": "# Hard-wrap package\n\nFormat the current selection to have lines no longer than 80 characters using\n<kbd>cmd/ctrl-alt-y</kbd>. If nothing is selected, the current paragraph will be\nreflowed.\n\nThis packages uses the config value of `editor.preferredLineLength` when set.\nWhen the multi-wrap-guide package is used, then the currently set column guide\nis used.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forivall/atom-hard-wrap.git"
+  },
+  "version": "1.1.0"
+}
