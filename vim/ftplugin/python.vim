@@ -4,6 +4,6 @@ set shiftwidth=4
 set textwidth=79
 set expandtab
 set autoindent
-"setl nosmartindent
+setl nosmartindent
 set fileformat=unix
 set encoding=utf-8

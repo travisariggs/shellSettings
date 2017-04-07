@@ -240,7 +240,7 @@ let g:nerdtree_tabs_open_on_console_startud=2
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
 
@@ -259,6 +259,13 @@ autocmd InsertEnter * highlight CursorLine ctermbg=black guibg=black
 autocmd InsertLeave * highlight CursorLine ctermbg=NONE guibg=NONE
 autocmd InsertLeave * set cursorline
 
+"--------------------------------------------------------------
+set mouse=a
+if has('mouse_sqr')
+    set ttymouse=sgr
+else
+    set ttymouse=xterm2
+endif
 
 "--------------------------------------------------------------
 "  Indention to 2 spaces for web development
