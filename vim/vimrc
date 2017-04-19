@@ -274,3 +274,13 @@ au BufNewFile,BufRead *.js, *.html, *.css
     \ set softtabstop=2
     \ set shiftwidth=2
 
+"--------------------------------------------------------------
+"  Trim trailing whitespace on saves
+autocmd FileType c,cpp,css,python,html,java,javascript,json,php,postscr,xml,yaml
+  \ autocmd BufWritePre <buffer> %s/\s\+$//e
+"autocmd BufWritePre *.ps %s/\s\+$//e
+
+"--------------------------------------------------------------
+"  Set Fileformat to Unix
+set fileformat=unix
+
