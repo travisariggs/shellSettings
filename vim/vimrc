@@ -183,6 +183,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 "Plug 'tmhedberg/SimpylFold'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'davidhalter/jedi-vim'
+Plug 'yegappan/greplace'
 
 call plug#end()
 
