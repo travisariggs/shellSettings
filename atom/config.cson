@@ -4,7 +4,7 @@
     telemetryConsent: "no"
     themes: [
       "atom-dark-ui"
-      "earthsung-by-jackson-syntax"
+      "pastel-jelly-syntax"
     ]
   editor:
     showIndentGuide: true
