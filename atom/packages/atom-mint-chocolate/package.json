@@ -1,0 +1,68 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/rc/_pjq3yv173q6kh_51rczzgdm0000gn/T/d-117326-6700-2o01ac.2ul0ckrzfr/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/rc/_pjq3yv173q6kh_51rczzgdm0000gn/T/d-117326-6700-2o01ac.2ul0ckrzfr/package.tgz",
+        "spec": "/private/var/folders/rc/_pjq3yv173q6kh_51rczzgdm0000gn/T/d-117326-6700-2o01ac.2ul0ckrzfr/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/rc/_pjq3yv173q6kh_51rczzgdm0000gn/T/apm-install-dir-117326-6700-1c066r7.gopl9xusor"
+    ]
+  ],
+  "_from": "../d-117326-6700-2o01ac.2ul0ckrzfr/package.tgz",
+  "_id": "atom-mint-chocolate@0.2.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/atom-mint-chocolate",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/rc/_pjq3yv173q6kh_51rczzgdm0000gn/T/d-117326-6700-2o01ac.2ul0ckrzfr/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/rc/_pjq3yv173q6kh_51rczzgdm0000gn/T/d-117326-6700-2o01ac.2ul0ckrzfr/package.tgz",
+    "spec": "/private/var/folders/rc/_pjq3yv173q6kh_51rczzgdm0000gn/T/d-117326-6700-2o01ac.2ul0ckrzfr/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117326-6700-2o01ac.2ul0ckrzfr/package.tgz",
+  "_shasum": "912c3ff86c3c816984135c0da12a68398bbb51d5",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/rc/_pjq3yv173q6kh_51rczzgdm0000gn/T/d-117326-6700-2o01ac.2ul0ckrzfr/package.tgz",
+  "_where": "/private/var/folders/rc/_pjq3yv173q6kh_51rczzgdm0000gn/T/apm-install-dir-117326-6700-1c066r7.gopl9xusor",
+  "bugs": {
+    "url": "https://github.com/gugacavalieri/mint-chocolate-syntax-atom/issues"
+  },
+  "dependencies": {},
+  "description": "A full of flavored minty chocolate syntax theme for Atom Text Editor!",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/gugacavalieri/mint-chocolate-syntax-atom#readme",
+  "keywords": [
+    "syntax",
+    "theme",
+    "chocolate",
+    "mint",
+    "minty",
+    "dark"
+  ],
+  "license": "MIT",
+  "name": "atom-mint-chocolate",
+  "optionalDependencies": {},
+  "readme": "# atom-mint-chocolate theme\n\nWe all love minty chocolate, and Atom makes it better!\n\nInspired by Choco theme @ [TextMate-Themes](https://github.com/filmgirl/TextMate-Themes)\n\n![chocolate-mint](http://www.blenderbottle.com/media/recipes/ChocolateMint.jpg)\n![minty-java](https://cloud.githubusercontent.com/assets/4624484/13029097/31fecd32-d261-11e5-89e8-58e188c1771f.png)\n![minty-html](https://cloud.githubusercontent.com/assets/4624484/13029096/31fd3ca6-d261-11e5-9f2e-5ad3ea2d90b5.png)\n![minty-php](https://cloud.githubusercontent.com/assets/4624484/13029098/32084010-d261-11e5-85e5-24a735271cb2.png)\n![minty-atom](https://cloud.githubusercontent.com/assets/4624484/13029095/31f4fc30-d261-11e5-8680-9582f7ecc1d6.png)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gugacavalieri/mint-chocolate-syntax-atom.git"
+  },
+  "theme": "syntax",
+  "version": "0.2.0"
+}
