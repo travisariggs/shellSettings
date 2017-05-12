@@ -184,6 +184,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'davidhalter/jedi-vim'
 Plug 'yegappan/greplace'
+Plug 'jimf/vim-pep8-text-width'
 
 call plug#end()
 
@@ -292,6 +293,11 @@ if has('mouse_sqr')
 else
     set ttymouse=xterm2
 endif
+
+"--------------------------------------------------------------
+"  Set PEP8 Text Width for code and comments with plugin
+let g:pep8_text_width = 79           " Default 79
+let g:pep8_comment_text_width = 72   " Default 72
 
 "--------------------------------------------------------------
 "  Indention to 2 spaces for web development
