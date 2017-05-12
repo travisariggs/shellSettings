@@ -266,6 +266,8 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
+let g:syntastic_python_checkers = ['python', 'flake8']
+let g:syntastic_python_flake8_quiet_messages = { "regex": "E127" }
 
 "--------------------------------------------------------------
 "   Highlight the current cursor line with an underline
@@ -283,6 +285,7 @@ autocmd InsertLeave * highlight CursorLine ctermbg=NONE guibg=NONE
 autocmd InsertLeave * set cursorline
 
 "--------------------------------------------------------------
+"  Enable Mouse Support
 set mouse=a
 if has('mouse_sqr')
     set ttymouse=sgr
