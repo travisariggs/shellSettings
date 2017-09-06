@@ -185,6 +185,7 @@ Plug 'vim-scripts/indentpython.vim'
 Plug 'davidhalter/jedi-vim'
 Plug 'yegappan/greplace'
 Plug 'jimf/vim-pep8-text-width'
+Plug 'ctrlpvim/ctrlp.vim'
 
 call plug#end()
 
@@ -274,16 +275,16 @@ let g:syntastic_python_flake8_quiet_messages = { "regex": "E127" }
 "   Highlight the current cursor line with an underline
 set cursorline
 " Highlight it with a black background
-"hi CursorLine   cterm=NONE ctermbg=black guibg=black
+hi CursorLine   cterm=NONE ctermbg=black guibg=black
 
 " Change background while in insert mode to black
 "au InsertEnter * hi Normal ctermbg=black guibg=black
 "au InsertLeave * hi Normal ctermbg=None guibg=None
 
 " Change background of current line while in insert mode to black
-autocmd InsertEnter * highlight CursorLine ctermbg=black guibg=black
-autocmd InsertLeave * highlight CursorLine ctermbg=NONE guibg=NONE
-autocmd InsertLeave * set cursorline
+" autocmd InsertEnter * highlight CursorLine ctermbg=black guibg=black
+" autocmd InsertLeave * highlight CursorLine ctermbg=NONE guibg=NONE
+" autocmd InsertLeave * set cursorline
 
 "--------------------------------------------------------------
 "  Enable Mouse Support
@@ -300,6 +301,16 @@ let g:pep8_text_width = 79           " Default 79
 let g:pep8_comment_text_width = 72   " Default 72
 
 "--------------------------------------------------------------
+"  CtrlP Fuzzy Searching Plugin settings
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+let g:ctrlp_working_path_mode = 'wa'
+" let g:ctrlp_root_markers = ['.catkin_workspace']
+
+let g:ctrlp_by_filename = 1
+
+"--------------------------------------------------------------
 "  Indention to 2 spaces for web development
 au BufNewFile,BufRead *.js, *.html, *.css
     \ set tabstop=2
@@ -311,6 +322,14 @@ au BufNewFile,BufRead *.js, *.html, *.css
 autocmd FileType c,cpp,css,python,html,java,javascript,json,php,postscr,xml,yaml
   \ autocmd BufWritePre <buffer> %s/\s\+$//e
 "autocmd BufWritePre *.ps %s/\s\+$//e
+
+"--------------------------------------------------------------
+"  Trim trailing whitespace on F5
+:nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
+
+"--------------------------------------------------------------
+"  Set syntax to XML for ROS launch files
+autocmd BufNewFile,BufRead *.launch set syntax=xml
 
 "--------------------------------------------------------------
 "  Set Fileformat to Unix

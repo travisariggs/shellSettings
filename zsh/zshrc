@@ -58,7 +58,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
-export PATH="/home/travis/code/ros/catkin_ws/devel/bin:/opt/ros/kinetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+export PATH="$PATH:/home/travis/code/ros/catkin_ws/devel/bin:/home/travis/.local/bin:/opt/ros/kinetic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -90,17 +90,17 @@ alias vi='vim'
 
 ## For ROS work
 #export GAZEBO_MODEL_PATH=${HOME}/code/ros/catkin_ws/src/gazebo_models/models
-#source /opt/ros/kinetic/setup.zsh
-#source /home/travis/code/ros/catkin_ws/devel/setup.zsh
+source /opt/ros/kinetic/setup.zsh
+source /home/travis/code/ros/catkin_ws/devel/setup.zsh
 
 # Robot via VPN
 #export ROS_MASTER_URI=http://10.110.102.1:11311
 #export ROS_HOSTNAME=10.8.0.2
 
-# ANT 13
-#export ROS_MASTER_URI=http://ant13:11311
-#export ROS_HOSTNAME=192.168.1.7
+# Bar 6
+# export ROS_MASTER_URI=http://bar6:11311
+# export ROS_HOSTNAME=tr-zbook1
 
 # Local machine
-#export ROS_MASTER_URI=http://localhost:11311
-#export ROS_HOSTNAME=localhost
+# export ROS_MASTER_URI=http://localhost:11311
+# export ROS_HOSTNAME=localhost
