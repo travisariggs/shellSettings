@@ -191,6 +191,8 @@ call plug#end()
 
 
 "colorscheme travis-monokai
+set background=dark
+set t_Co=256
 
 if (exists('+colorcolumn'))
   set colorcolumn=73,80
