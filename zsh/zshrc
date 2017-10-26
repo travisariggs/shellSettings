@@ -86,6 +86,7 @@ alias ll='ls -l'
 alias la='ls -A'
 alias l='ls'
 alias cd..='cd ..'
+alias ..='cd ..'
 alias vi='vim'
 
 ## For ROS work
