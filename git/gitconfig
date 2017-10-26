@@ -6,3 +6,5 @@
   excludesfile = ~/.shellSettings/git/gitignore_global
   autocrlf = input
   editor = /usr/bin/vim
+[push]
+	recurseSubmodules = check

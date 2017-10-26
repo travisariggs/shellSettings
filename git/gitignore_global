@@ -40,3 +40,5 @@ Thumbs.db
 # Editor Files
 *.swp
 *.swo
+
+CATKIN_IGNORE
