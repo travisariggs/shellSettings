@@ -91,16 +91,7 @@ alias vi='vim'
 ## For ROS work
 #export GAZEBO_MODEL_PATH=${HOME}/code/ros/catkin_ws/src/gazebo_models/models
 source /opt/ros/kinetic/setup.zsh
-source /home/travis/code/ros/catkin_ws/devel/setup.zsh
+# source /home/travis/code/ros/bar_truck/catkin_ws/devel/setup.zsh
 
-# Robot via VPN
-#export ROS_MASTER_URI=http://10.110.102.1:11311
-#export ROS_HOSTNAME=10.8.0.2
-
-# Bar 6
-# export ROS_MASTER_URI=http://bar6:11311
-# export ROS_HOSTNAME=tr-zbook1
-
-# Local machine
-# export ROS_MASTER_URI=http://localhost:11311
-# export ROS_HOSTNAME=localhost
+export ROS_MASTER_URI=http://localhost:11311
+export ROS_HOSTNAME=localhost
