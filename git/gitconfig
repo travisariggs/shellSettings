@@ -3,7 +3,7 @@
 [diff]
   tool = meld
 [core]
-  excludesfile = ~/.shellSettings/git/gitignore_global
+  excludesfile = ~/.shell_settings/git/gitignore_global
   autocrlf = input
   editor = /usr/bin/vim
 [push]
