@@ -173,13 +173,12 @@ Plug 'qpkorr/vim-bufkill'
 Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plug 'vim-syntastic/syntastic'
 Plug 'nvie/vim-flake8' " Python PEP8 checker
-Plug 'ctrlpvim/ctrlp.vim'
-"Plug 'tmhedberg/SimpylFold'
-Plug 'vim-scripts/indentpython.vim'
-Plug 'davidhalter/jedi-vim'
-Plug 'yegappan/greplace'
 Plug 'jimf/vim-pep8-text-width'
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'vim-scripts/indentpython.vim'
+" Plug 'ctrlpvim/ctrlp.vim'
+" Plug 'tmhedberg/SimpylFold'
+" Plug 'davidhalter/jedi-vim'
+" Plug 'yegappan/greplace'
 
 call plug#end()
 
