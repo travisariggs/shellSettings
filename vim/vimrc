@@ -219,15 +219,21 @@ nnoremap <F3> :noh<CR>
 "set foldlevel=99
 "let g:SimpylFold_docstring_preview=1
 
-
 "--------------------------------------------------------------
 "   NERDTree Plugin Configuration
 " Hide .pyc files in NERDTree
 let NERDTreeIgnore=['\.pyc$', '\~$']
 map <Leader>1 <Plug>NERDTreeTabsToggle<CR>
+
+" Start nerdtree automatically
+" autocmd vimenter * NERDTree
+
 " Open Nerdtree tab on startup only if a directory is given
-let g:nerdtree_tabs_open_on_gui_startup=2
-let g:nerdtree_tabs_open_on_console_startud=2
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+
+" Close vim if nerdtree is only window left open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 "--------------------------------------------------------------
 "   NERDCommenter
