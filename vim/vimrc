@@ -165,6 +165,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-sensible'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'jistr/vim-nerdtree-tabs'
 Plug 'scrooloose/nerdcommenter'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'airblade/vim-gitgutter'
@@ -172,9 +173,9 @@ Plug 'qpkorr/vim-bufkill'
 Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plug 'vim-syntastic/syntastic'
 Plug 'vim-scripts/ZoomWin'
-Plug 'nvie/vim-flake8' " Python PEP8 checker
 Plug 'jimf/vim-pep8-text-width'
 Plug 'vim-scripts/indentpython.vim'
+" Plug 'nvie/vim-flake8' " Python PEP8 checker
 " Plug 'ctrlpvim/ctrlp.vim'
 " Plug 'tmhedberg/SimpylFold'
 " Plug 'davidhalter/jedi-vim'
@@ -219,15 +220,21 @@ nnoremap <F3> :noh<CR>
 "set foldlevel=99
 "let g:SimpylFold_docstring_preview=1
 
-
 "--------------------------------------------------------------
 "   NERDTree Plugin Configuration
 " Hide .pyc files in NERDTree
 let NERDTreeIgnore=['\.pyc$', '\~$']
-map <Leader>1 :NERDTreeToggle<CR>
+map <Leader>1 <Plug>NERDTreeTabsToggle<CR>
+
+" Start nerdtree automatically
+" autocmd vimenter * NERDTree
+
 " Open Nerdtree tab on startup only if a directory is given
-let g:nerdtree_tabs_open_on_gui_startup=2
-let g:nerdtree_tabs_open_on_console_startud=2
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | endif
+
+" Close vim if nerdtree is only window left open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 "--------------------------------------------------------------
 "   NERDCommenter
@@ -264,7 +271,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
-let g:syntastic_python_checkers = ['python', 'flake8']
+let g:syntastic_python_checkers = ['python', 'flake8', 'pycodestyle']
 let g:syntastic_python_flake8_quiet_messages = { "regex": "E127" }
 
 "--------------------------------------------------------------
