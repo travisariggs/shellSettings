@@ -7,4 +7,4 @@
   autocrlf = input
   editor = /usr/bin/vim
 [push]
-	recurseSubmodules = check
+  recurseSubmodules = check
