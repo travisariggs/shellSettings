@@ -172,9 +172,9 @@ Plug 'airblade/vim-gitgutter'
 Plug 'qpkorr/vim-bufkill'
 Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plug 'vim-syntastic/syntastic'
-Plug 'nvie/vim-flake8' " Python PEP8 checker
 Plug 'jimf/vim-pep8-text-width'
 Plug 'vim-scripts/indentpython.vim'
+" Plug 'nvie/vim-flake8' " Python PEP8 checker
 " Plug 'ctrlpvim/ctrlp.vim'
 " Plug 'tmhedberg/SimpylFold'
 " Plug 'davidhalter/jedi-vim'
@@ -264,7 +264,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
-let g:syntastic_python_checkers = ['python', 'flake8']
+let g:syntastic_python_checkers = ['python', 'flake8', 'pycodestyle']
 let g:syntastic_python_flake8_quiet_messages = { "regex": "E127" }
 
 "--------------------------------------------------------------
