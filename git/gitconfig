@@ -8,3 +8,5 @@
   editor = /usr/bin/vim
 [push]
   recurseSubmodules = check
+[fetch]
+	prune = true
