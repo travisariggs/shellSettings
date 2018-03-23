@@ -1,4 +1,0 @@
-[default]
-clip_registers = {'': ('m',
-                       'char')}
-current_register = ''
