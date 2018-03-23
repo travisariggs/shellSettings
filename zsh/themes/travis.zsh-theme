@@ -18,7 +18,7 @@ theme_precmd () {
 setopt prompt_subst
 
 PROMPT='
-%B%F{blue}%n%{$reset_color%}@%B%{$fg[yellow]%}%m %B%F{magenta}%~%B%F{green}${vcs_info_msg_0_}%B%F{magenta} %{$reset_color%}
+%B%F{blue}%n%{$reset_color%}@%B%{$fg[yellow]%}%m %B%F{magenta}'%1~'%B%F{green}${vcs_info_msg_0_}%B%F{magenta} %{$reset_color%}
 $ '
 
 RPROMPT='%B%F{black}%D{%m/%d %H:%M}%{$reset_color%}'
