@@ -1,0 +1,1 @@
+alias vt="vim -u /home/bar/.travis/shell_settings/vim/vimrc --cmd 'set rtp^=~/.travis/shell_settings/vim'"
