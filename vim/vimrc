@@ -161,6 +161,7 @@ nnoremap <C-L> :nohl<CR><C-L>
 
 "------------------------------------------------------------
 "   Plugins
+"call plug#begin('~/.travis/shell_settings/vim/plugged')
 call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-sensible'
@@ -238,6 +239,9 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 
 " Close vim if nerdtree is only window left open
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+let g:NERDTreeDirArrowExpandable="+"
+let g:NERDTreeDirArrowCollapsible="-"
 
 "--------------------------------------------------------------
 "   NERDCommenter
