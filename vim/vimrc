@@ -161,8 +161,8 @@ nnoremap <C-L> :nohl<CR><C-L>
 
 "------------------------------------------------------------
 "   Plugins
-"call plug#begin('~/.travis/shell_settings/vim/plugged')
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.travis/shell_settings/vim/plugged')
+"call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-sensible'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
