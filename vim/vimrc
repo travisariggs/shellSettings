@@ -182,6 +182,10 @@ Plug 'vim-scripts/indentpython.vim'
 
 call plug#end()
 
+if has('gui_running')
+    " Gvim Colorscheme
+    colorscheme desert
+endif
 
 "colorscheme travis-monokai
 set background=dark
