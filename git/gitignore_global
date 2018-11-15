@@ -44,3 +44,5 @@ Thumbs.db
 CATKIN_IGNORE
 build.yaml
 config.yaml
+*config.yaml
+~/code/ros/bar_truck1/catkin_ws/.catkin_tools/profiles/default/config.yaml

@@ -89,6 +89,9 @@ alias cd..='cd ..'
 alias ..='cd ..'
 alias vi='vim'
 
+export LESS='-R'
+export LESSOPEN='|~/.lessfilter %s'
+
 ## For ROS work
 #export GAZEBO_MODEL_PATH=${HOME}/code/ros/catkin_ws/src/gazebo_models/models
 source /opt/ros/kinetic/setup.zsh

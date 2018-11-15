@@ -20,6 +20,9 @@ set nocompatible
 " and for plugins that are filetype specific.
 filetype indent plugin on
 
+" Use ftplugin directory
+filetype plugin on
+
 " Enable syntax highlighting
 let python_highlight_all=1
 syntax on
@@ -174,11 +177,13 @@ Plug 'vim-syntastic/syntastic'
 Plug 'vim-scripts/ZoomWin'
 Plug 'jimf/vim-pep8-text-width'
 Plug 'vim-scripts/indentpython.vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'mileszs/ack.vim'
 " Plug 'nvie/vim-flake8' " Python PEP8 checker
-" Plug 'ctrlpvim/ctrlp.vim'
 " Plug 'tmhedberg/SimpylFold'
 " Plug 'davidhalter/jedi-vim'
 " Plug 'yegappan/greplace'
+" Plug 'Rykka/riv.vim'
 
 call plug#end()
 
@@ -311,10 +316,28 @@ let g:pep8_comment_text_width = 72   " Default 72
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
-let g:ctrlp_working_path_mode = 'wa'
-" let g:ctrlp_root_markers = ['.catkin_workspace']
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_root_markers = ['.catkin_workspace']
 
 let g:ctrlp_by_filename = 1
+
+" Use Silver Searcher instead of default
+" if executable('ag')
+"   " Use Ag over Grep
+"   set grepprg=ag\ --nogroup\ --nocolor
+"
+"   " Use ag in CtrlP for listing files. Lightning fast and respects
+"   " .gitignore
+"   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+" endif
+
+"--------------------------------------------------------------
+"  Ack Plugin
+
+" Use Silver Searcher if available
+if executable('ag')
+    let g:ackprg = 'ag --vimgrep'
+endif
 
 "--------------------------------------------------------------
 "  Indention to 2 spaces for web development
@@ -336,6 +359,10 @@ autocmd FileType c,cpp,css,python,html,java,javascript,json,php,postscr,xml,yaml
 "--------------------------------------------------------------
 "  Set syntax to XML for ROS launch files
 autocmd BufNewFile,BufRead *.launch set syntax=xml
+
+"--------------------------------------------------------------
+" Change colors for ReStructuredText files
+" autocmd BufWinEnter *.rst colorscheme slate
 
 "--------------------------------------------------------------
 "  Set Fileformat to Unix
