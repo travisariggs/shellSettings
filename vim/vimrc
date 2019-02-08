@@ -190,7 +190,8 @@ call plug#end()
 
 if has('gui_running')
     " Gvim Colorscheme
-    colorscheme desert
+    colorscheme solarized
+    set guifont=Ubuntu\ Mono\ 14
 endif
 
 "colorscheme travis-monokai
