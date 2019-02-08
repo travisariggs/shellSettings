@@ -171,7 +171,6 @@ Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'scrooloose/nerdcommenter'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'airblade/vim-gitgutter'
-Plug 'qpkorr/vim-bufkill'
 Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plug 'vim-syntastic/syntastic'
 Plug 'vim-scripts/ZoomWin'
@@ -179,6 +178,7 @@ Plug 'jimf/vim-pep8-text-width'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mileszs/ack.vim'
+" Plug 'qpkorr/vim-bufkill'
 " Plug 'nvie/vim-flake8' " Python PEP8 checker
 " Plug 'tmhedberg/SimpylFold'
 " Plug 'davidhalter/jedi-vim'
