@@ -341,10 +341,16 @@ endif
 
 "--------------------------------------------------------------
 "  Indention to 2 spaces for web development
-au BufNewFile,BufRead *.js, *.html, *.css
+au BufNewFile,BufRead *.js, *.html, *.css, *.yaml
     \ set tabstop=2
     \ set softtabstop=2
     \ set shiftwidth=2
+
+"--------------------------------------------------------------
+"  Indention to 2 spaces for YAML
+autocmd FileType yaml setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType cpp setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType hpp setlocal tabstop=2 shiftwidth=2 softtabstop=2
 
 "--------------------------------------------------------------
 "  Trim trailing whitespace on saves
