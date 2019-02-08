@@ -283,6 +283,12 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ['python', 'flake8', 'pycodestyle']
 let g:syntastic_python_flake8_quiet_messages = { "regex": "E127" }
 
+let g:syntastic_cpp_checkers = ['clang_check']
+
+"--------------------------------------------------------------
+"   Vim-Ros plugin
+" let g:ros_build_system = 'catkin'
+
 "--------------------------------------------------------------
 "   Highlight the current cursor line with an underline
 set cursorline
