@@ -2,6 +2,8 @@
   path = ~/.gituser
 [diff]
   tool = meld
+[merge]
+  tool = meld
 [core]
   excludesfile = ~/.shell_settings/git/gitignore_global
   autocrlf = input
