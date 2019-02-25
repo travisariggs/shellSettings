@@ -88,6 +88,7 @@ alias l='ls'
 alias cd..='cd ..'
 alias ..='cd ..'
 alias vi='vim'
+alias nvim='nvim.appimage'
 
 export LESS='-R'
 export LESSOPEN='|~/.lessfilter %s'
