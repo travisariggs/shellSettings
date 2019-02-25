@@ -207,6 +207,21 @@ endif
 " by Vim (useful for refreshing files when switching git branches)
 set autoread
 
+function Setlight()
+  set background=light
+  colorscheme solarized
+  highlight ColorColumn ctermbg=white
+  hi CursorLine cterm=NONE ctermbg=white guibg=white
+  highlight Search ctermbg=5 ctermfg=15
+endfunction
+
+function Setdark()
+  set background=dark
+  colorscheme default
+  highlight ColorColumn ctermbg=black
+  hi CursorLine cterm=NONE ctermbg=black guibg=black
+  " highlight Search ctermbg=5 ctermfg=15
+endfunction
 
 "-------------------------------------------------------------
 "   For Splits
