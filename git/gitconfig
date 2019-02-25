@@ -10,5 +10,6 @@
   editor = /usr/bin/vim
 [push]
   recurseSubmodules = check
+	default = simple
 [fetch]
   prune = true
