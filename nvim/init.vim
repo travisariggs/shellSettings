@@ -37,6 +37,10 @@ set softtabstop=4
 set expandtab
 set smarttab
 
+autocmd FileType yaml setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType cpp  setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType hpp  setlocal tabstop=2 shiftwidth=2 softtabstop=2
+
 " Allow switching between unsaved buffers
 set hidden
 
