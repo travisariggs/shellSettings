@@ -37,6 +37,9 @@ set softtabstop=4
 set expandtab
 set smarttab
 
+" Allow switching between unsaved buffers
+set hidden
+
 " Searching
 set ignorecase
 set smartcase
