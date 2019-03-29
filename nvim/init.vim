@@ -51,7 +51,7 @@ syntax on
 
 " Add Comment and Max Line column stripes
 if (exists('+colorcolumn'))
-  set colorcolumn=73,80
+  set colorcolumn=73,100
   highlight ColorColumn ctermbg=black
 endif
 
